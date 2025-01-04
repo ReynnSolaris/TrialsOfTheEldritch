@@ -2,6 +2,7 @@ package com.reynn.trialeldritch.data.texture;
 
 
 import com.reynn.trialeldritch.TrialEldritch;
+import com.reynn.trialeldritch.items.ItemRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -41,7 +42,10 @@ public class ModItemStateProvider extends ItemModelProvider {
 
 	@Override
 	protected void registerModels() {
-
+		basicItem(ItemRegistry.VOIDSTONE_ORE.get());
+		basicItem(ItemRegistry.VOIDSTONE.get());
+		basicItem(ItemRegistry.STARSHARD.get());
+		basicItem(ItemRegistry.RAW_STARSHARD.get());
 	}
 
 	private void item(Item item) {

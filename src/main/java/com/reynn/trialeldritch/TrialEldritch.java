@@ -2,7 +2,9 @@ package com.reynn.trialeldritch;
 
 
 import com.mojang.logging.LogUtils;
+import com.reynn.trialeldritch.blocks.BlockRegistry;
 import com.reynn.trialeldritch.data.DataGenerators;
+import com.reynn.trialeldritch.items.ItemRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
@@ -26,6 +28,9 @@ public class TrialEldritch {
 
         // Register DataGen
         modEventBus.addListener(DataGenerators::gatherData);
+
+        ItemRegistry.register(modEventBus);
+        BlockRegistry.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

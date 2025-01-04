@@ -1,1 +1,5 @@
-// 1.21.1	2024-12-31T00:00:41.9458394	Recipes
+// 1.21.1	2025-01-03T21:15:27.9104373	Recipes
+a852561ba7a56864b7edec3aba9058c83d8dd7c5 data/minecraft/advancement/recipes/misc/voidstone_from_blasting_voidstone_ore.json
+6a198704f9fa4e563c4ec145703aa586b688ccd6 data/minecraft/advancement/recipes/misc/voidstone_from_smelting_voidstone_ore.json
+81203f845751d03ef40a2f29c1cfc5ecc8dd09d9 data/minecraft/recipe/voidstone_from_blasting_voidstone_ore.json
+73d3ab6ad0e0762bf0ffea569c31632a99e18271 data/minecraft/recipe/voidstone_from_smelting_voidstone_ore.json
