@@ -18,6 +18,9 @@ public class ItemRegistry {
     public static DeferredItem<Item> STARSHARD = ITEMS.registerItem("starshard", Starshard::new, new Item.Properties());
     public static DeferredItem<Item> RAW_STARSHARD = ITEMS.registerItem("raw_starshard", Item::new, new Item.Properties());
 
+    public static DeferredItem<Item> AETHERIUM_CRYSTAL = ITEMS.registerItem("aetherium_crystal", Item::new, new Item.Properties());
+    public static DeferredItem<Item> CELESTIAL_ALLOY = ITEMS.registerItem("celestial_alloy", Item::new, new Item.Properties());
+
     public static void register(IEventBus modBus) {
         ITEMS.register(modBus);
     }

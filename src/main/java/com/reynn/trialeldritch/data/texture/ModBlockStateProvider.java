@@ -1,9 +1,12 @@
 package com.reynn.trialeldritch.data.texture;
 
 import com.reynn.trialeldritch.TrialEldritch;
+import com.reynn.trialeldritch.blocks.BlockRegistry;
+import net.minecraft.client.model.Model;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
@@ -22,17 +25,16 @@ import java.util.function.Function;
 public class ModBlockStateProvider extends BlockStateProvider {
 
 
-
 	public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
 		super(output, TrialEldritch.MODID, exFileHelper);
 		// TODO Auto-generated constructor stub
-
 	}
 
 	@Override
 	protected void registerStatesAndModels() {
 		// TODO Auto-generated method stub
-
+		horizontalBlock(BlockRegistry.ALTAR.get(), models().getExistingFile(ResourceLocation.fromNamespaceAndPath(TrialEldritch.MODID, "block/altar")));
+		createBlockItem(BlockRegistry.ALTAR.get());
 	}
 
 	private void normalBlock(Block block) {

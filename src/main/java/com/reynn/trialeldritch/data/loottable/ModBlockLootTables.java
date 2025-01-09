@@ -1,6 +1,7 @@
 package com.reynn.trialeldritch.data.loottable;
 
 import com.reynn.trialeldritch.TrialEldritch;
+import com.reynn.trialeldritch.blocks.BlockRegistry;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.HolderLookup.Provider;
@@ -34,8 +35,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
 	@Override
 	protected void generate() {
-
-
+		dropSelf(BlockRegistry.ALTAR.get());
 	}
 	
 	@Override

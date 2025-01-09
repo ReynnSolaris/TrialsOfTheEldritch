@@ -46,6 +46,8 @@ public class ModItemStateProvider extends ItemModelProvider {
 		basicItem(ItemRegistry.VOIDSTONE.get());
 		basicItem(ItemRegistry.STARSHARD.get());
 		basicItem(ItemRegistry.RAW_STARSHARD.get());
+		basicItem(ItemRegistry.CELESTIAL_ALLOY.get());
+		basicItem(ItemRegistry.AETHERIUM_CRYSTAL.get());
 	}
 
 	private void item(Item item) {
